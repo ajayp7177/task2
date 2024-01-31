@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JSON Placeholder Posts</title>
+</head>
+<body>
+
+<div class="search-container">
+    <label for="search">Search:</label>
+    <input type="text" id="search" oninput="searchTable()" placeholder="Type to search...">
+</div>
+
+<table id="posts-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Body</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+</table>
+
+<div class="pagination">
+    <button onclick="showMore()">Show 10 More</button>
+    <button onclick="showLess()">Show Less</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
